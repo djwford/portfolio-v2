@@ -4,17 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Portfolio Site" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Portfolio Site" %>">
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>    <%= stylesheet_link_tag "home" %>
+<%= stylesheet_link_tag "reset" %>
+<%= stylesheet_link_tag "jquery-ui-1.10.3.custom.min.css" %>
+
+<link href='http://fonts.googleapis.com/css?family=Signika:400,600,700' rel='stylesheet' type='text/css'>
+
+
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
+    <div id="container">
       <%= render 'layouts/messages' %>
       <%= yield %>
-    </main>
+    </div>
   </body>
 </html>

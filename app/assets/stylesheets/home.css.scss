@@ -1,3 +1,118 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$black: #000000;
+$green: #C1CE96;
+$grey: #BBFDE0;
+$blue: #59D8E6;
+$orange: #FF5335;
+$red: #8E001C;
+@import 'fonts';
+
+
+
+body {
+  font-size: 11px;
+  background-color: black;
+}
+ 
+header {
+  float: left;
+  background-color: $blue;
+  font-size: 5em;
+      -moz-box-shadow: inset 0 -10px 8px #0E2224;
+      -webkit-box-shadow: inset 0 -10px 8px #0E2224;
+  box-shadow: inset 0 -10px 8px #0E2224;
+  width: 100%;
+  h1 {
+    padding-top: 1em;
+    color: black;
+    text-align: center;
+    font-family: 'Signika', sans-serif !important;
+  }
+}
+
+#space_before_nav{
+  background-color: black;
+  float: left; 
+  width: 100%;
+  clear: both;
+  &:after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+#nav_wrapper{
+  width: 100%;
+  background-color: black;
+  background-color: black;
+  border-bottom: 1px solid $blue;
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+#navigation{
+  width: 100%;  float: left;
+  clear: left;
+  background-color: black;
+  font-size: 1.5em;
+  li {
+    text-align: right;
+    color: #306E73;
+    list-style-type: none;
+    display: inline-block;
+    }
+
+}
+
+.internal_link {
+    color: $blue;
+    text-decoration: none;  
+    font-size: 2em;
+    font-family: 'Signika';
+    &:hover{
+      color: $green;
+    }  
+    cursor: pointer;
+  }
+
+  .page {
+    background-color: black;
+    color: white;
+      &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  }
+//////////////////////////////////////////////////
+//            about page content                //
+//////////////////////////////////////////////////
+
+#about_me_container p {
+  padding: 0px 1em 0px 1em;
+}
+
+.copy_wrapper{
+ p{
+  padding: 1em;
+ }
+}
+.one-third-column {
+  width: 30%;
+  background-color: red;
+  display: block;
+  float: left;
+  margin-left: 3%;
+}
+
+#projects_container{
+  width: 100%;
+  img{
+  max-height: 30%;
+  max-width: 40%;;
+}
+}

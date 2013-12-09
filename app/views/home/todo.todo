@@ -1,0 +1,47 @@
+
+
+  // $('.verb').hide();
+
+  // function fadeInSequence(li){
+  //     var next = $(li).next('li') !=null ? function(){fadeInSequence($(li).next('li'));} : function(){fadeInSequence($('li.verb:first'));};
+  //     $(li).fadeIn(500).delay(2000).hide(300,next);
+  // }
+
+  // fadeInSequence($('li.verb:first'));
+
+
+
+  // $('#space_before_nav').hide();
+  // $('#space_before_nav').(500);
+
+
+<div id="verb_carousel">
+        <ul style="height: 30px;">
+          <li class="verb">Living</li>
+          <li class="verb">Working</li>
+          <li class="verb">Eating</li>
+          <li class="verb">Cycling</li>
+          <li class="verb">Running</li>
+          <li class="verb">Hiking</li>
+          <li class="verb">Reading a good book</li>
+          <li class="verb">Drinking a local brew</li>
+        </ul>
+      </div>
+      <p>in Salt Lake City, Utah</p>
+    </div><!-- end welcome -->
+    to do:
+      ☐ render all of the content on the page
+        ☐ hide the content
+      ☐ set up the on-click to make the space_before_nav padding shrink
+
+ ☐ figure out why there is a scrollbar on the first page
+   ☐ check if other pages have scrollbars
+     ☐ get rid of all scrollbars --? set page-height dynamically to equal view height
+       it should be your goal to have absolutely no scrollbars on your site
+
+      ☐ breakpoints
+
+        ☐ use js to set the height of the page to the device height, as well, set the heights of the elements like so:
+            h1: 2/5 device height
+            space_before_nav: 1/5 nav
+            navigation 2/5 nav
